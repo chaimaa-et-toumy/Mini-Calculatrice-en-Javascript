@@ -2,7 +2,7 @@
 let light = document.querySelector(".fa-adjust");
 let night = document.querySelector(".fa-moon");
 let p = false;
-
+let nbr1, nbr2;
 function theme() {
   document.body.classList.toggle("light-theme");
   night.classList.toggle("display");
@@ -43,20 +43,19 @@ function multiplier(nbr1, nbr2) {
 
 function diviser(nbr1, nbr2) {
   // isNan => 0/0
-  if (nbr2 == 0 || isNaN(nbr2)) {
-    window.alert("Cannot divide by zero");
-    document.getElementById("resulta").value = "";
-  } else {
-    return nbr1 / nbr2;
-  }
+  return nbr1 / nbr2;
 }
 function Modulo(nbr1, nbr2) {
   return nbr1 % nbr2;
 }
 function egal() {
-  let x = document.getElementById("resulta").value;
+  let x = resulta.value;
   let y = eval(x);
-  document.getElementById("resulta").value = y;
+  resulta.value = y;
+  if (resulta.value == "Infinity" || resulta.value == "NaN") {
+    alert("Cannot divide by zero");
+    resulta.value = " ";
+  }
 }
 function operate(nbr1, nbr2, operateur) {
   if (operateur == "+") {
