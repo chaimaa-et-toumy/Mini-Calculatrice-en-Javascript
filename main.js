@@ -118,7 +118,7 @@ function egal(){
         effacer();
         affichage.value = 0;
         alert("cannot devide by zero");
-        break;
+        return;
       }
       else{
         memoire[i + 1] = operate(memoire[i - 1], memoire[i], memoire[i + 1]);
