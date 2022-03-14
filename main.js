@@ -52,7 +52,7 @@ backspace.addEventListener("click" , function(){
 
 function isoperateur(val){
   var last = val.length - 1;
-  if (val[last] == '+' || val[last] == '-' || val[last] == '*' || val[last] == '/')
+  if (val[last] == '+' || val[last] == '-' || val[last] == '*' || val[last] == '/' || val[last] == '%')
   {
     return true;
   }
