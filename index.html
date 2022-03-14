@@ -16,9 +16,9 @@
       <!-- start dark mode -->
 
       <div class="bg-dark-light p-2 d-inline">
-        <button type="button" class="btn" onclick="theme()">
-        <i class="fas fa-adjust mt-3 display fs-4 text-muted" id="toggle-dark"></i>
-        <i class="fas fa-moon mt-3 fs-4 bg-btn text-muted"></i>
+        <button type="button" class="btn" id="theme">
+        <i class="fas fa-adjust mt-3 display fs-5 text-muted" id="toggle-dark"></i>
+        <i class="fas fa-moon mt-3 fs-5 bg-btn text-muted"></i>
         </button>
       </div>
       <!-- end dark mode -->
@@ -33,34 +33,34 @@
 
       <div class="calcu d-flex flex-column pb-2 col-12 gap-2">
         <div class="row1 w-100 d-flex justify-content-center gap-2">
-          <button class="bg-operate btn touches col-2" onclick="effacer()">C</button>
-          <button class="bg-operate btn touches col-2" onclick="backspace()">
+          <button class="bg-operate btn touches col-2" id="effacer">C</button>
+          <button class="bg-operate btn touches col-2" id="backspace">
             <i class="far fa-backspace d-flex justify-content-center fs-4"></i></button>
-          <button class="bg-operate btn touches col-2" onclick="operateur('/')">/</button>
-          <button class="bg-operate btn touches col-2" onclick="operateur('%')">%</button>
+          <button class="bg-operate btn touches col-2 operateurs" value="/">/</button>
+          <button class="bg-operate btn touches col-2 operateurs" value="%">%</button>
         </div>
         <div class="w-100 d-flex justify-content-center gap-2">
-          <button class="bg-number btn touches col-2" onclick="number(7)">7</button>
-          <button class="bg-number btn touches col-2" onclick="number(8)">8</button>
-          <button class="bg-number btn touches col-2" onclick="number(9)">9</button>
-          <button class="bg-operate btn touches col-2" onclick="operateur('*')">*</button>
+          <button class="bg-number btn touches col-2 numbers"    value="7" >7</button>
+          <button class="bg-number btn touches col-2 numbers"    value="8" >8</button>
+          <button class="bg-number btn touches col-2 numbers"    value="9" >9</button>
+          <button class="bg-operate btn touches col-2 operateurs" value="*">*</button>
         </div>
         <div class="w-100 d-flex justify-content-center gap-2">
-          <button class="bg-number btn touches col-2" onclick="number(4)">4</button>
-          <button class="bg-number btn touches col-2" onclick="number(5)">5</button>
-          <button class="bg-number btn touches col-2" onclick="number(6)">6</button>
-          <button class="bg-operate btn touches col-2" onclick="operateur('-')">-</button>
+          <button class="bg-number btn touches col-2 numbers"    value="4">4</button>
+          <button class="bg-number btn touches col-2 numbers"    value="5">5</button>
+          <button class="bg-number btn touches col-2 numbers"    value="6">6</button>
+          <button class="bg-operate btn touches col-2 operateurs" value="-">-</button>
         </div>
         <div class="w-100 d-flex justify-content-center gap-2">
-          <button class="bg-number btn touches col-2" onclick="number(1)">1</button>
-          <button class="bg-number btn touches col-2" onclick="number(2)">2</button>
-          <button class="bg-number btn touches col-2" onclick="number(3)">3</button>
-          <button class="bg-operate btn touches col-2" onclick="operateur('+')">+</button>
+          <button class="bg-number btn touches col-2 numbers"    value="1">1</button>
+          <button class="bg-number btn touches col-2 numbers"    value="2">2</button>
+          <button class="bg-number btn touches col-2 numbers"    value="3">3</button>
+          <button class="bg-operate btn touches col-2 operateurs" value="+">+</button>
         </div>
         <div class="row5 w-100 d-flex justify-content-center">
-          <button class="bg-number btn touches col-2" onclick="number(0)">0</button>
-          <button class="bg-number btn touches col-2" onclick="point('.')">.</button>
-          <button class="bg-egal btn touches col-4" onclick="egal()">=</button>
+          <button class="bg-number btn touches col-2 numbers" value="0">0</button>
+          <button class="bg-number btn touches col-2" id="point">.</button>
+          <button class="bg-egal btn touches col-4" id="egal">=</button>
         </div>
       </div>
     </div>
